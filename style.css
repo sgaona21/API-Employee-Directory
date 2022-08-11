@@ -12,20 +12,22 @@ h1 {
 }
 .main-grid-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     max-height: 100vh;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     margin: 3rem;
-    border: solid red 2px;
 
 }
 
 .avatar {
     width: 25%;
+    border-radius: 50%;
 }
 
 .card {
+    display: flex;
+
     border: solid lightgray 2px;
     border-radius: 10px;
 }
