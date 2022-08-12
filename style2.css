@@ -6,9 +6,9 @@
 }
 
 h1 {
-    padding: 2rem;
-    font-size: 1.5rem;
-    margin-left: 16%;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 h2 {
@@ -20,44 +20,43 @@ body {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 85vh;
-    width: 90%;
-    max-width: 1300px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .avatar-container {
-    display: flex; 
-    align-items: center;
+    display: flex;
     justify-content: center;
-    flex-basis: 35%;
 }
 
 .avatar {
-    width: 85%;
-    height: 85%;
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    padding: .5rem;
+
 }
 
 .text-container {
     align-self: center;
-    padding-left: 1em;
-    flex-grow: 1;
+
 }
 
 .card {
     display: flex;
+    width: 90%;
     border: solid lightgray 2px;
     border-radius: 10px;
-    height: 75%;
-    width: 90%;
-    min-width: 360px;
-    margin: auto;
     background-color: white;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.main-email {
+    word-break: break-all;
 }
 
 body {
@@ -65,17 +64,18 @@ body {
 }
 
 .overlay {
-    position: absolute; 
+    position: fixed; 
+    /* position: absolute;  ORIGINAL POSITION!!! */
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     background: rgba(100, 100, 100, 0.4);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .modal {
-    width: 375px;
+    width: 95%;
     margin: 15% auto auto;
     text-align: center;
     padding: 30px 20px;
@@ -96,7 +96,7 @@ body {
     display: none;
 }
 
-.email {
+.modal-email {
     padding: .25rem 0 .5rem 0;
 }
 
@@ -116,7 +116,7 @@ body {
     padding: 1rem;
 }
 
-.grid-email {
-    overflow-wrap: break-word;
-}
+
+
+
 

@@ -32,7 +32,7 @@ fetch(urlAPI)
             </div>    
             <div class="text-container">
                 <h2 class="name"> ${name.first} ${name.last}</h2>
-                <p class="email">${email}</p>
+                <p class="email main-email">${email}</p>
                 <p class="address">${city}</p>
             </div>
         </div>`
@@ -54,11 +54,11 @@ fetch(urlAPI)
     `<img class="avatar" src="${picture.large}">
     <div class="text-container">
         <h2 class="name">${name.first} ${name.last}</h2>
-        <p class="email">${email}</p>
+        <p class="email modal-email">${email}</p>
         <p class="address overlay-city">${city}</p>
         <hr />
         <p class="phone">${phone}</p>
-        <p class="address street-address">${street.number} ${street.name}, ${state} ${postcode}</p>
+        <p class="address street-address">${street.number} ${street.name} ${city}, ${state} ${postcode}</p>
         <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>`;
     overlay.classList.remove("hidden");
