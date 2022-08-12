@@ -5,6 +5,20 @@
     font-family: 'Figtree', sans-serif;
 }
 
+h1 {
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-left: 16%;
+}
+
+h2 {
+    font-size: 1.15rem;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,7 +55,9 @@
     border-radius: 10px;
     height: 75%;
     width: 90%;
+    min-width: 360px;
     margin: auto;
+    background-color: white;
 }
 
 body {
@@ -62,8 +78,8 @@ body {
     margin: 15% auto auto;
     text-align: center;
     padding: 30px 20px;
-    border-radius: 5px;
-    border: #778 solid 2px;
+    border-radius: 10px;
+    border: lightgray solid 2px;
     position: relative;
     background: #fff;
 }
@@ -77,4 +93,24 @@ body {
 
 .hidden {
     display: none;
+}
+
+.email {
+    padding: .25rem 0 .5rem 0;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.overlay-city {
+    padding-bottom: 2rem;
+}
+
+.phone {
+    padding-top: 2rem;
+}
+
+.street-address {
+    padding: 1rem;
 }
