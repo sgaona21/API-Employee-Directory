@@ -6,9 +6,10 @@
 }
 
 h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     padding: 1rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -23,7 +24,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .avatar-container {
@@ -119,4 +119,70 @@ body {
 
 
 
+/* *****MEDIA QUERIES***** */
 
+@media screen and (min-width: 768px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        display: flex;
+        max-width: 325px;
+        border: solid lightgray 2px;
+        border-radius: 10px;
+        background-color: white;
+        padding: .5rem;
+        margin: auto;
+        margin-bottom: 1rem
+    }
+
+    .modal {
+        width: 375px;
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: .5rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .card {
+        display: flex;
+        max-width: 325px;
+        border: solid lightgray 2px;
+        border-radius: 10px;
+        background-color: white;
+        padding: .5rem;
+        margin: auto;
+        margin-bottom: 1rem
+    }
+
+    .modal {
+        width: 375px;
+    }
+
+    h1 {
+        max-width: 1200px;
+        margin: auto;
+        padding-left: 2.5rem
+    }
+
+    .modal {
+        width: 375px;
+        margin: 10% auto auto;
+    }
+ 
+}
