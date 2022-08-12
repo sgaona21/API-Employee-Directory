@@ -5,7 +5,7 @@
     font-family: 'Figtree', sans-serif;
 }
 
-.main-grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -44,3 +44,37 @@
     margin: auto;
 }
 
+body {
+    position: relative;
+}
+
+.overlay {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: #778 solid 2px;
+    position: relative;
+    background: #fff;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
